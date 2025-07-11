@@ -1,13 +1,17 @@
 /*
+   kvv-oled.ino - Martin Schmidt
+
+   based on the excellent work done in
    kvv.ino - Till Harbaum <till@harbaum.org>
 
-   Sketch for ESP8266 driving a 2.9" tri color eink display.
+   Display the departure information for KVV tram lines in Karlsruhe
+   on a SSD1306 display. The code was adopted to work on an esp32
+   and with the reduced character space available on the SD1306 Dis-
+   plays.
 
-   Displaying the departure information for KVV tram lines in Karlsruhe.
-   Specify your preferred station id below and setup your WIFI credentials
-   and the device will update the eink display whenever powered up and go
-   to deep sleep / power save after that. Simply press reset whenever you
-   want to have the display updated. 
+   While this does not stay true to the original "power-saving"
+   effort of the e-ink display, the constant power draw is used to
+   cycle through the station names.
 */
 
 #include <Wire.h>
