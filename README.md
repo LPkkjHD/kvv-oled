@@ -4,6 +4,8 @@ As I had a Adafruit SSD1306 OLED display as well as an esp32 sitting around I st
 
 The fetching and parsing logic of the KVV departures is practically the same as in the snipped provided by Till, however, since the SSD1306s display is much smaller than the eInk one used in the original project we reduce the amount of displayed departures to 3 and scroll the station text.
 
+![PXL_20250712_180901012](https://github.com/user-attachments/assets/f6b508ac-8d86-4834-b0ff-56c968b06a51)
+
 ## Usage (aka. I want one as well)
 1. clone the repository
 2. create a file called `wifi.h` which populates `WIFI_SSID` and `WIFI_PASSWORD` of your network
